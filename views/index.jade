@@ -1,0 +1,44 @@
+doctype html
+html(lang="en")
+	head
+		title Url Shortener Microservice
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+			integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+			crossorigin="anonymous")
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+			integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r"
+			crossorigin="anonymous")
+
+		style.
+			.story-item {
+				margin-left: 2em;
+			}
+
+	body
+		div.container-fluid
+			div.row
+				div.col-md-12
+					h2 API Basejump: Url Shortener microservice
+
+					blockquote User stories:
+						p.story-item 1) I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.
+						p.story-item 2) When I visit that shortened URL, it will redirect me to my original link.
+
+					h3 Example usage:
+					p
+						code https://timestamp-ms.herokuapp.com/December%2015,%202015
+					p
+						code https://timestamp-ms.herokuapp.com/1450137600
+
+					h3 Example output:
+					p
+						code { "original_url": "", "short_url": "" }
+
+					br
+					hr
+					p Source code found at <a href="https://github.com/j-klassen/timestamp-ms">github</a>.
+
+		script(src="https://code.jquery.com/jquery-2.2.0.min.js")
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+			integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+			crossorigin="anonymous")
