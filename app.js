@@ -18,8 +18,9 @@ if (app.get('env') === 'development') {
 
 	app.set('MONGO_HOST', process.env.MONGO_HOST);
 	app.set('MONGO_DB', process.env.MONGO_DB);
-	app.set('MONGO_COLLECTION', process.env.MONGO_COLLECTION);
 }
+
+app.set('MONGO_COLLECTION', process.env.MONGO_COLLECTION);
 
 app.set('views', './views');
 app.set('view engine', 'jade');
