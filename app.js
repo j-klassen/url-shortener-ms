@@ -26,7 +26,15 @@ app.set('view engine', 'jade');
 
 // Setup app
 co(function* run() {
-	const mongoUrl = `mongodb://${app.get('MONGO_HOST')}/${app.get('MONGO_DB')}`;
+	let mongoUrl;
+
+	if (process.env.NODE_ENV === 'development') {
+		mongoUrl = `mongodb://${app.get('MONGO_HOST')}/${app.get('MONGO_DB')}`;
+	} else if (process.env.NODE_ENV === 'production') {
+		// Heroku variable
+		mongoUrl = process.env.MONGOLAB_URI;
+	}
+
 	let db;
 	let collection;
 
