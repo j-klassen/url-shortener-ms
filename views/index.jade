@@ -26,17 +26,21 @@ html(lang="en")
 
 					h3 Example usage:
 					p
-						code https://timestamp-ms.herokuapp.com/December%2015,%202015
+						code https://jk-url-shortener-ms.herokuapp.com/new/https://google.com
 					p
-						code https://timestamp-ms.herokuapp.com/1450137600
+						code https://jk-url-shortener-ms.herokuapp.com/new/https://www.codr.io
+
+					h3 Helpers:
+					p Clear the database
+						code https://jk-url-shortener-ms.herokuapp.com/db/clear
 
 					h3 Example output:
 					p
-						code { "original_url": "", "short_url": "" }
+						code { "original_url": "https://jk-url-shortener-ms.herokuapp.com/new/https://www.codr.io", "short_url": "https://jk-url-shortener-ms.herokuapp.com/JazEE19" }
 
 					br
 					hr
-					p Source code found at <a href="https://github.com/j-klassen/timestamp-ms">github</a>.
+					p Source code found at <a href="https://github.com/j-klassen/url-shortener-ms">github</a>.
 
 		script(src="https://code.jquery.com/jquery-2.2.0.min.js")
 		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
